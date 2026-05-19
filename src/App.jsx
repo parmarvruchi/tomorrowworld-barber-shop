@@ -13,6 +13,7 @@ import "./styles/home.css";
 function Home() {
   return (
     <>
+    {/* HERO SECTION */}
       <section className="hero-section text-white d-flex align-items-center">
         <div className="container">
           <div className="col-lg-6">
@@ -41,7 +42,7 @@ function Home() {
           </div>
         </div>
       </section>
-
+{/* FEATURES SECTION */}
       <section className="py-5 bg-black text-white text-center">
         <div className="container">
           <p className="text-danger fw-bold">WHY CHOOSE US</p>
@@ -90,6 +91,200 @@ function Home() {
           </div>
         </div>
       </section>
+
+      {/* SERVICES SECTION */}
+<section className="py-5 services-section text-white">
+  <div className="container">
+    <div className="text-center mb-5">
+      <p className="text-danger fw-bold">POPULAR SERVICES</p>
+      <h2 className="display-5 fw-bold">Our Premium Services</h2>
+    </div>
+
+    <div className="row g-4">
+      <div className="col-md-6 col-lg-3">
+        <div className="service-card">
+          <img src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?q=80&w=800" alt="Hair Cut" />
+          <div className="p-4">
+            <h4>Hair Cut</h4>
+            <p>Professional haircut with perfect finishing.</p>
+            <h5 className="text-danger">₹199</h5>
+          </div>
+        </div>
+      </div>
+
+      <div className="col-md-6 col-lg-3">
+        <div className="service-card">
+          <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=800" alt="Beard Trim" />
+          <div className="p-4">
+            <h4>Beard Trim</h4>
+            <p>Sharp beard styling and trimming service.</p>
+            <h5 className="text-danger">₹149</h5>
+          </div>
+        </div>
+      </div>
+
+      <div className="col-md-6 col-lg-3">
+        <div className="service-card">
+          <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=800" alt="Hair Styling" />
+          <div className="p-4">
+            <h4>Hair Styling</h4>
+            <p>Trendy styling for parties and special looks.</p>
+            <h5 className="text-danger">₹299</h5>
+          </div>
+        </div>
+      </div>
+
+      <div className="col-md-6 col-lg-3">
+        <div className="service-card">
+          <img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?q=80&w=800" alt="Facial Cleanup" />
+          <div className="p-4">
+            <h4>Facial Cleanup</h4>
+            <p>Refreshing face cleanup for glowing skin.</p>
+            <h5 className="text-danger">₹399</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* ABOUT SECTION */}
+    <section className="about-section">
+  <div className="container">
+    <div className="row align-items-center g-5">
+
+      {/* IMAGE */}
+
+      <div className="col-lg-6">
+        <div className="about-image-box">
+
+          <img
+            src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?q=80&w=1200"
+            alt="Barber"
+            className="img-fluid about-main-img"
+          />
+
+          <div className="experience-card">
+            <h1>10+</h1>
+            <p>Years Experience</p>
+          </div>
+
+        </div>
+      </div>
+
+      {/* CONTENT */}
+
+      <div className="col-lg-6">
+
+        <p className="section-tag">
+          ABOUT US
+        </p>
+
+        <h2 className="about-title">
+          We Create Style & Confidence
+        </h2>
+
+        <p className="about-text">
+          TomorrowWorld Barber Shop delivers premium grooming services with
+          expert barbers, luxury atmosphere, and modern style trends.
+        </p>
+
+        <p className="about-text">
+          Our mission is to make every customer feel stylish, confident,
+          and refreshed with professional care and precision cuts.
+        </p>
+
+        <div className="about-features">
+
+          <div className="feature-item">
+            ✔ Professional Barbers
+          </div>
+
+          <div className="feature-item">
+            ✔ Premium Grooming Products
+          </div>
+
+          <div className="feature-item">
+            ✔ Modern Equipment
+          </div>
+
+          <div className="feature-item">
+            ✔ Luxury Experience
+          </div>
+
+        </div>
+
+        <button className="btn btn-danger btn-lg px-4 mt-4">
+          Read More
+        </button>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer className="footer-section text-white">
+  <div className="container">
+    <div className="row g-4">
+
+      <div className="col-md-4">
+        <img
+  src="/logo.png"
+  alt="TomorrowWorld Logo"
+  className="footer-logo"
+/>
+        <p>Premium barber shop for modern grooming, stylish haircut and confidence.</p>
+      </div>
+
+      <div className="col-md-4">
+  <h5>Quick Links</h5>
+
+  <p>
+    <Link className="footer-link" to="/">
+      Home
+    </Link>
+  </p>
+
+  <p>
+    <Link className="footer-link" to="/services">
+      Services
+    </Link>
+  </p>
+
+  <p>
+    <Link className="footer-link" to="/about">
+      About
+    </Link>
+  </p>
+
+  <p>
+    <Link className="footer-link" to="/contact">
+      Contact
+    </Link>
+  </p>
+</div>
+
+      <div className="col-md-4">
+        <h5>Contact Info</h5>
+        <p>📍 Ridhi sidhi arced, 80 Feet Rd, Patel Chokdi, Vivekanand Wadi, Anand, Gujarat 388120</p>
+        <p>📞 +91 88661 91240</p>
+        <p>✉️ tomorrowworld@gmail.com</p>
+      </div>
+
+    </div>
+
+    <hr />
+
+    <p className="text-center mb-0">
+      © 2026 TomorrowWorld Barber Shop. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+      
+
+
     </>
   );
 }
