@@ -192,3 +192,8 @@ body{
 .nav-link.active{
   color:#dc3545 !important;
 }
+.main-logo{
+  height:75px;
+  width:auto;
+  object-fit:contain;
+}
