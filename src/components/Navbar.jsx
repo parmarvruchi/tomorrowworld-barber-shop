@@ -1,24 +1,19 @@
 import { Link } from "react-router-dom";
 import { FaCalendarCheck } from "react-icons/fa";
-import logo from "../assets/logo.png";
+
 
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
       <div className="container-fluid px-5">
-<h1>hello</h1>
+
         {/* LOGO */}
 
-        <Link
-  className="navbar-brand"
-  to="/"
->
   <img
-    src={logo}
-    alt="TomorrowWorld Logo"
-    className="main-logo"
-  />
-</Link>
+  src="/logo.png"
+  alt="TomorrowWorld Logo"
+  className="main-logo"
+/>
 
         {/* MOBILE BUTTON */}
 
