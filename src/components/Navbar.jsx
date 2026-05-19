@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
       <div className="container-fluid px-5">
-
+<h1>hello</h1>
         {/* LOGO */}
 
         <Link
