@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 import {
   FaCalendarCheck,
   FaCut,
@@ -278,9 +277,9 @@ function Home() {
 
               </div>
 
-              <button className="btn btn-danger btn-lg px-4 mt-4">
-                Read More
-              </button>
+         <Link to="/about" className="btn btn-danger btn-lg px-4">
+  Read More
+</Link>
 
             </div>
 

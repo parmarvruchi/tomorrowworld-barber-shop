@@ -1,6 +1,5 @@
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { FaCalendarCheck } from "react-icons/fa";
-
 
 function Navbar() {
   return (
@@ -9,11 +8,11 @@ function Navbar() {
 
         {/* LOGO */}
 
-  <img
-  src="/logo.png"
-  alt="TomorrowWorld Logo"
-  className="main-logo"
-/>
+        <img
+          src="/logo.png"
+          alt="TomorrowWorld Logo"
+          className="main-logo"
+        />
 
         {/* MOBILE BUTTON */}
 
@@ -34,47 +33,87 @@ function Navbar() {
         >
           <ul className="navbar-nav ms-auto align-items-lg-center gap-lg-4">
 
+            {/* HOME */}
+
             <li className="nav-item">
-              <Link className="nav-link active" to="/">
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive
+                    ? "nav-link active-link"
+                    : "nav-link"
+                }
+              >
                 Home
-              </Link>
+              </NavLink>
             </li>
 
+            {/* SERVICES */}
+
             <li className="nav-item">
-              <Link className="nav-link" to="/services">
+              <NavLink
+                to="/services"
+                className={({ isActive }) =>
+                  isActive
+                    ? "nav-link active-link"
+                    : "nav-link"
+                }
+              >
                 Services
-              </Link>
+              </NavLink>
             </li>
 
+            {/* ABOUT */}
+
             <li className="nav-item">
-              <Link className="nav-link" to="/about">
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  isActive
+                    ? "nav-link active-link"
+                    : "nav-link"
+                }
+              >
                 About
-              </Link>
+              </NavLink>
             </li>
 
+            {/* CONTACT */}
+
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive
+                    ? "nav-link active-link"
+                    : "nav-link"
+                }
+              >
                 Contact
+              </NavLink>
+            </li>
+
+            {/* LOGIN */}
+
+            <li className="nav-item">
+              <Link
+                className="btn btn-outline-light px-4"
+                to="/login"
+              >
+                Login
               </Link>
             </li>
 
-            <li className="nav-item">
-  <Link
-    className="btn btn-outline-light px-4"
-    to="/login"
-  >
-    Login
-  </Link>
-</li>
+            {/* SIGNUP */}
 
-<li className="nav-item">
-  <Link
-    className="btn btn-danger px-4"
-    to="/register"
-  >
-    Signup
-  </Link>
-</li>
+            <li className="nav-item">
+              <Link
+                className="btn btn-danger px-4"
+                to="/register"
+              >
+                Signup
+              </Link>
+            </li>
 
             {/* BOOK BUTTON */}
 
