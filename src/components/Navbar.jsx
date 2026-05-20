@@ -58,6 +58,24 @@ function Navbar() {
               </Link>
             </li>
 
+            <li className="nav-item">
+  <Link
+    className="btn btn-outline-light px-4"
+    to="/login"
+  >
+    Login
+  </Link>
+</li>
+
+<li className="nav-item">
+  <Link
+    className="btn btn-danger px-4"
+    to="/register"
+  >
+    Signup
+  </Link>
+</li>
+
             {/* BOOK BUTTON */}
 
             <li className="nav-item">
