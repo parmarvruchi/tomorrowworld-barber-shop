@@ -93,34 +93,13 @@ function Navbar() {
               </NavLink>
             </li>
 
-            {/* LOGIN */}
-
-            <li className="nav-item">
-              <Link
-                className="btn btn-outline-light px-4"
-                to="/login"
-              >
-                Login
-              </Link>
-            </li>
-
-            {/* SIGNUP */}
-
-            <li className="nav-item">
-              <Link
-                className="btn btn-danger px-4"
-                to="/register"
-              >
-                Signup
-              </Link>
-            </li>
 
             {/* BOOK BUTTON */}
 
             <li className="nav-item">
               <Link
                 className="btn btn-danger px-4 py-2"
-                to="/booking"
+                to="/login"
               >
                 <FaCalendarCheck className="me-2" />
                 Book Appointment

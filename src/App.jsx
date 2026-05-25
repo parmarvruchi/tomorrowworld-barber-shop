@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 
@@ -10,13 +10,21 @@ import Register from "./pages/Register";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import UserDashboard from "./pages/UserDashboard";
 
 import "./styles/home.css";
 
 function App() {
+
+   const location = useLocation();
+
+  const hideLayout =
+    location.pathname === "/login" ||
+    location.pathname === "/register" ||
+    location.pathname === "/user-dashboard";
   return (
     <>
-      <Navbar />
+      {!hideLayout && <Navbar />}
 
       <Routes>
 
@@ -30,12 +38,14 @@ function App() {
 
         <Route path="/register" element={<Register />} />
 
+        <Route path="/user-dashboard" element={<UserDashboard />} />
+
         <Route path="/about" element={<About />} />
 
         <Route path="/contact" element={<Contact />} />
 
       </Routes>
-      <Footer />
+      {!hideLayout && <Footer />}
     </>
   );
 }

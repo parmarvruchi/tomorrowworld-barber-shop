@@ -4,21 +4,44 @@ import "../styles/auth.css";
 function Register() {
   return (
     <section className="auth-page">
-      <div className="auth-box">
-        <h2>Create Account</h2>
+      <div className="auth-left">
+        <img src="/logo.png" alt="Logo" className="auth-logo" />
+        <div className="auth-art">✂︎</div>
+      </div>
 
-        <input type="text" placeholder="Full Name" />
-        <input type="email" placeholder="Email Address" />
-        <input type="tel" placeholder="Mobile Number" />
-        <input type="password" placeholder="Password" />
+      <div className="auth-right">
+        <form className="auth-form">
+          <h1>SIGN UP</h1>
+          <p>Enter your details to register</p>
 
-        <button className="btn btn-danger w-100 py-2">
-          Register
-        </button>
+          <div className="row">
+            <div className="col-md-6 mb-3">
+              <label>Phone</label>
+              <input type="tel" placeholder="Phone Number" />
+            </div>
 
-        <p>
-          Already have an account? <Link to="/login">Login</Link>
-        </p>
+            <div className="col-md-6 mb-3">
+              <label>Name</label>
+              <input type="text" placeholder="Full Name" />
+            </div>
+
+            <div className="col-md-6 mb-3">
+              <label>City</label>
+              <input type="text" placeholder="City" />
+            </div>
+
+            <div className="col-md-6 mb-3">
+              <label>DOB</label>
+              <input type="date" />
+            </div>
+          </div>
+
+          <button>SIGN UP</button>
+
+          <div className="auth-bottom">
+            Already have an account? <Link to="/login">SIGN IN</Link>
+          </div>
+        </form>
       </div>
     </section>
   );
